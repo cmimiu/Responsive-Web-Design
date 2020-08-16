@@ -1,0 +1,107 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Survey Form</title>
+</head>
+
+<body translate="no">
+<div class="container">
+
+<header class="header">
+
+<h1 id="title" class="text-center">Depression Survey Form</h1>
+<p id="description" class="description text-center">
+a simple Survey Form using HTML and CSS
+</p>
+
+</header>
+
+<form id="survey-form">
+<div class="form-group">
+<label id="name-label" for="name">Name</label>
+<input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+</div>
+
+<div class="form-group">
+<label id="email-label" for="email">Email</label>
+<input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+</div>
+
+<div class="form-group">
+<label id="number-label" for="number">Mental Age<span class="clue">(optional)</span></label>
+<input type="number" name="age" id="number" min="10" max="10000" class="form-control" placeholder="Age" />
+</div>
+
+<div class="form-group">
+<p>Which option best describes your current state of mind?</p>
+<select id="dropdown" name="role" class="form-control" required>
+<option disabled selected value>Select current role</option>
+<option value="student">Eternally Tired</option>
+<option value="job">Tired with Life</option>
+<option value="learner">Feeliing like a useless bacteria that doesn't even harm humans</option>
+<option value="preferNo">Prefer to send in a 5 page essay about how depressed you are</option>
+</select>
+</div>
+
+<div class="form-group">
+<p>Do you know the reason why you're in this "state of mind"?</p>
+<label>
+<input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />Definitely</label
+      >
+<label>
+<input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe</label
+      >
+<label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />It's easier to pretend I don't</label
+      >
+</div>
+
+<div class="form-group">
+<p>
+Do you wanna talk about it?
+</p>
+<select id="most-like" name="mostLike" class="form-control" required>
+<option disabled selected value>Select an option</option>
+<option value="challenges">Yes, please!</option>
+<option value="projects">I guess it'd be nice to share a little</option>
+<option value="community">Nah~ I'm good</option>
+<option value="openSource">I'm sorry, you havent reached Friendship Level 29 yet</option>
+</select>
+</div>
+
+<div class="form-group">
+<p>
+How could we help change this "state of mind" of yours?
+<span class="clue">(Check all that apply)</span>
+</p>
+<label><input name="prefer" value="give-me-attention" type="checkbox" class="input-checkbox" />Give me attention</label>
+<label><input name="prefer" value="give-me-food" type="checkbox" class="input-checkbox" />Give me food</label>
+<label><input name="prefer" value="give-me-money" type="checkbox" class="input-checkbox" />Give me money</label>
+<label><input name="prefer" value="more-money-please" type="checkbox" class="input-checkbox" />More money, please</label>
+<label><input name="prefer" value="you-cant-help-me" type="checkbox" class="input-checkbox" />You can't help me; I'm doomed</label>
+<label><input name="prefer" value="supernatural-marathon" type="checkbox" class="input-checkbox" />Supernatural MARATHON!!!</label>
+<label><input name="prefer" value="world-peace" type="checkbox" class="input-checkbox" />World Peace</label>
+<label><input name="prefer" value="talk-favorite" type="checkbox" class="input-checkbox" />Talk to me about your favorite things</label>
+<label><input name="prefer" value="my-favorite" type="checkbox" class="input-checkbox" Listen to me talk about my favorite things</label>
+<label><input name="prefer" value="alcohol" type="checkbox" class="input-checkbox" />ALCOHOL~~~</label>
+<label><input name="prefer" value="money" type="checkbox" class="input-checkbox" />Money could probably fix all my problems tho, so...</label>
+</div>
+
+<div class="form-group">
+<p>Any comments or suggestions?</p>
+<textarea id="comments" class="input-textarea" name="comment" placeholder="Let me know anything else I can do to make this more... interesting???"></textarea>
+</div>
+
+<div class="form-group">
+<button type="submit" id="submit" class="submit-button">
+Submit
+</button>
+</div>
+
+</form>
+</div>
+</body>
+</html>
